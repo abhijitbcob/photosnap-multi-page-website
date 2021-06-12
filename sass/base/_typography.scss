@@ -1,0 +1,63 @@
+// Typography utilities
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-black {
+    color: var(--pure-black);
+}
+
+.text-white {
+    color: var(--pure-white);
+}
+
+.font-bold {
+    font-weight: var(--fs-700);
+}
+
+.tracking-wide {
+    letter-spacing: 2px;
+}
+
+.tracking-wider {
+    letter-spacing: 4.17px;
+}
+
+.fs-12 {
+    font-size: 1.2rem;
+}
+
+.fs-13 {
+    font-size: 1.3rem;
+}
+
+.fs-15 {
+    font-size: 1.5rem;
+}
+
+.fs-18 {
+    font-size: 1.8rem;
+}
+
+.hover\:text-opacity-30:hover {
+    transition: all .2s;
+    opacity: 30%;
+}
+
+.heading-primary {
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    font-weight: var(--fs-700);
+    line-height: 1.25;
+
+    @include respond-to(small) {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+}
+
+.paragraph-primary {
+    font-size: 1.5rem;
+    line-height: 1.667;
+    opacity: 0.6;
+}

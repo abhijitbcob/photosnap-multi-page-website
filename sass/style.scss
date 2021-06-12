@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+// 2. Configuration and helpers
+@import 'abstracts/mixins';
+
+// 1. Base stuff
+@import 'base/resets';
+@import 'base/root';
+@import 'base/typography';
+@import 'base/animation';
+
+
+// 3. Reusable utility classes
+@import 'utilities/flexbox';
+@import 'utilities/spacing';
+@import 'utilities/alignment';
+@import 'utilities/backgrounds';
+@import 'utilities/position';
+@import 'utilities/grid';
+
+// 4. Layout-related sections
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/hero';
+
+// 5. Components
+@import 'components/button';
+
+// 6. Page-specific styles
+@import 'pages/home';

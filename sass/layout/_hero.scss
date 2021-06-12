@@ -1,0 +1,29 @@
+.header-content-wrapper {
+    max-width: clamp(31.8rem, 20vw, 38.7rem);
+    padding-right: 2rem;
+    margin-left: 1rem;
+    margin-block: 5.8rem;
+
+    @include respond-to(small) {
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+}
+
+.vertical-gradient-bar {
+    position: absolute;
+    top: 0;
+    height: 6px;
+    width: 12.8rem;
+    background-image: linear-gradient(1deg, var(--accent-color-1), var(--accent-color-2), var(--accent-color-3));
+
+    @include respond-to(medium) {
+        top: auto;
+        left: 0;
+        width: 6px;
+        height: 30.4rem;
+        background-color: white;
+        background-image: linear-gradient(to top, var(--accent-color-1), var(--accent-color-2), var(--accent-color-3));
+    }
+}

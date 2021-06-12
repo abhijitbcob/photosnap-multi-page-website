@@ -1,0 +1,33 @@
+.md\:grid-small-big {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include respond-to(medium) {
+        grid-template-columns: minmax(49.5rem, 6.1fr) minmax(27.3rem, 8.3fr);
+    }
+}
+
+.md\:grid-big-small {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include respond-to(medium) {
+        grid-template-columns: minmax(27.3rem, 8.3fr) minmax(49.5rem, 6.1fr);
+    }
+}
+
+.md\:order-1 {
+    order: 2;
+
+    @include respond-to(medium) {
+        order: 1;
+    }
+}
+
+.md\:order-2 {
+    order: 1;
+
+    @include respond-to(medium) {
+        order: 2;
+    }
+}

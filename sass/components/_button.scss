@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: var(--fs-700);
+    letter-spacing: 2px;
+    transition: all .2s;
+}
+
+.btn-primary {
+    padding-inline: 2.4rem;
+    padding-block: 1.1rem;
+
+    &--black {
+        background-color: var(--pure-black);
+        color: var(--pure-white);
+    }
+
+    &--white {
+        background-color: var(--pure-white);
+        color: var(--pure-black);
+    }
+
+    &:hover {
+        background-color: var(--light-grey);
+        color: var(--pure-black);
+
+    }
+}
+
+.btn-secondary {
+    background-color: transparent;
+    transition: all .2s ease;
+
+    svg {
+        vertical-align: text-bottom;
+    }
+
+    &--black {
+        color: var(--pure-black);
+
+        svg path {
+            stroke: var(--pure-black);
+        }
+    }
+
+    &--white {
+        color: var(--pure-white);
+
+        svg path {
+            stroke: var(--pure-white);
+        }
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
