@@ -5,3 +5,13 @@
 .h-full {
     height: 100%;
 }
+
+.w-310 {
+    max-width: 31rem;
+}
+
+.md\:w-457 {
+    @include respond-to(medium) {
+        max-width: 45.7rem;
+    }
+}

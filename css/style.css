@@ -172,12 +172,16 @@ li {
   align-items: center;
 }
 
+.items-baseline {
+  align-items: baseline;
+}
+
 .gap-2 {
   gap: 2rem;
 }
 
-.gap-3 {
-  gap: 3rem;
+.col-gap-3 {
+  grid-column-gap: 3rem;
 }
 
 .mt-16 {
@@ -186,6 +190,18 @@ li {
 
 .mt-23 {
   margin-top: 2.3rem;
+}
+
+.mt-48 {
+  margin-top: 4.8rem;
+}
+
+.mblock-80 {
+  margin-block: 8rem;
+}
+
+.row-gap-56 {
+  grid-row-gap: 5.6rem;
 }
 
 @media (min-width: 768px) {
@@ -200,12 +216,32 @@ li {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:mblock-120 {
+    margin-top: 12rem;
+  }
+}
+
+.md\:row-gap-72 {
+  grid-row-gap: 7.2rem;
+}
+
 .w-full {
   width: 100%;
 }
 
 .h-full {
   height: 100%;
+}
+
+.w-310 {
+  max-width: 31rem;
+}
+
+@media (min-width: 768px) {
+  .md\:w-457 {
+    max-width: 45.7rem;
+  }
 }
 
 .mx-auto {

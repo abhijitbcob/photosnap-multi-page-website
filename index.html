@@ -1,239 +1,339 @@
- <!DOCTYPE html>
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
- <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <!-- <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> -->
-   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-   <title>Frontend Mentor | Photosnap Website Challenge</title>
-   <link rel="stylesheet" href="css/style.css">
- </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
- <body>
-   <header class="header bg-white">
-     <div class="overlay has-fade hide-for-desktop"></div>
-     <div class="bg-white relative">
-       <div class="container ">
-         <div class="flex justify-between items-center bg-white">
-           <a href="#"><img class="logo-img" src="images/shared/desktop/logo.svg" alt="logo"></a>
-           <nav class="desktop-navigation hide-for-mobile">
-             <ul class="flex justify-between">
-               <li><a class="uppercase font-bold fs-12 hover:text-opacity-30 tracking-wide" href="#">stories</a></li>
-               <li><a class="uppercase font-bold fs-12 hover:text-opacity-30 tracking-wide" href="#">features</a></li>
-               <li><a class="uppercase font-bold fs-12 hover:text-opacity-30 tracking-wide" href="#">pricing</a></li>
-             </ul>
-           </nav>
+<body>
+  <header class="header bg-white">
+    <div class="overlay has-fade hide-for-desktop"></div>
+    <div class="bg-white relative">
+      <div class="container">
+        <div class="flex justify-between items-center bg-white">
+          <a href="#"><img class="logo-img" src="images/shared/desktop/logo.svg" alt="logo" /></a>
+          <nav class="desktop-navigation hide-for-mobile">
+            <ul class="flex justify-between">
+              <li>
+                <a class="
+                      uppercase
+                      font-bold
+                      fs-12
+                      hover:text-opacity-30
+                      tracking-wide
+                    " href="#">stories</a>
+              </li>
+              <li>
+                <a class="
+                      uppercase
+                      font-bold
+                      fs-12
+                      hover:text-opacity-30
+                      tracking-wide
+                    " href="#">features</a>
+              </li>
+              <li>
+                <a class="
+                      uppercase
+                      font-bold
+                      fs-12
+                      hover:text-opacity-30
+                      tracking-wide
+                    " href="#">pricing</a>
+              </li>
+            </ul>
+          </nav>
 
-           <div class="hide-for-mobile">
-             <a href="#" class="btn btn-primary btn-primary--black">get an invite</a>
-           </div>
-           <div id="menu-toggler" class="hide-for-desktop">
-             <span></span>
-             <span></span>
-           </div>
-         </div>
-       </div>
+          <div class="hide-for-mobile">
+            <a href="#" class="btn btn-primary btn-primary--black">get an invite</a>
+          </div>
+          <div id="menu-toggler" class="hide-for-desktop">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white absolute left-0 right-0 has-fade">
+      <div class="mobile-menu container hide-for-desktop flex flex-col">
+        <nav class="mobile-navigation">
+          <ul class="flex flex-col items-center">
+            <li>
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-15
+                    hover:text-opacity-30
+                    tracking-wide
+                  " href="#">stories</a>
+            </li>
+            <li>
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-15
+                    hover:text-opacity-30
+                    tracking-wide
+                  " href="#">features</a>
+            </li>
+            <li>
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-15
+                    hover:text-opacity-30
+                    tracking-wide
+                  " href="#">pricing</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="horizontal-line bg-light-grey"></div>
+        <a href="#" class="btn btn-primary btn-primary--black">get an invite</a>
+      </div>
+    </div>
+  </header>
 
-     </div>
-     <div class="bg-white absolute left-0 right-0 has-fade">
-       <div class="mobile-menu container hide-for-desktop flex flex-col">
-         <nav class="mobile-navigation">
-           <ul class="flex flex-col items-center">
-             <li><a class="uppercase font-bold fs-15 hover:text-opacity-30 tracking-wide" href="#">stories</a></li>
-             <li><a class="uppercase font-bold fs-15 hover:text-opacity-30 tracking-wide" href="#">features</a></li>
-             <li><a class="uppercase font-bold fs-15 hover:text-opacity-30 tracking-wide" href="#">pricing</a></li>
-           </ul>
-         </nav>
-         <div class="horizontal-line bg-light-grey"></div>
-         <a href="#" class="btn btn-primary btn-primary--black">get an invite</a>
-       </div>
-     </div>
+  <section>
+    <div class="md:grid-small-big">
+      <div class="flex items-center justify-center md:order-1 bg-black relative">
+        <div class="header-content-wrapper">
+          <div class="vertical-gradient-bar"></div>
+          <h1 class="heading-primary text-white">
+            Create and share your photo Stories.
+          </h1>
+          <p class="paragraph-primary text-white mt-16 md:mt-21">
+            Photosnap is a platform for photographers and visual storytellers.
+            We make it easy to share photos, tell stories and connect with
+            others.
+          </p>
+          <a href="#" class="btn btn-secondary btn-secondary--white mt-23 md:mt-48">
+            get an invite
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="none" fill-rule="evenodd" stroke="#000">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <picture class="md:order-2">
+        <source media="(min-width: 992px)" srcset="images/home/desktop/create-and-share.jpg 830w" />
+        <source media="(min-width: 768px)" srcset="images/home/tablet/create-and-share.jpg 273w" />
+        <source media="(min-width: 576px)" srcset="images/home/desktop/create-and-share.jpg 830w" />
+        <img class="h-full w-full" src="images/home/mobile/create-and-share.jpg" alt="" />
+      </picture>
+    </div>
+  </section>
 
-   </header>
+  <section>
+    <div class="md:grid-big-small">
+      <picture>
+        <source media="(min-width: 992px)" srcset="images/home/desktop/beautiful-stories.jpg 830w" />
+        <source media="(min-width: 768px)" srcset="images/home/tablet/beautiful-stories.jpg 273w" />
+        <source media="(min-width: 576px)" srcset="images/home/desktop/beautiful-stories.jpg 830w" />
+        <img class="h-full w-full" src="images/home/mobile/beautiful-stories.jpg" />
+      </picture>
 
-   <section>
-     <div class="md:grid-small-big">
-       <div class="flex items-center justify-center md:order-1 bg-black relative">
-         <div class="header-content-wrapper">
-           <div class="vertical-gradient-bar"></div>
-           <h1 class="heading-primary text-white">Create and share your photo Stories.</h1>
-           <p class="paragraph-primary text-white mt-16 md:mt-21">
-             Photosnap is a platform for photographers and visual storytellers. We make it
-             easy to share photos, tell stories and connect with others.
-           </p>
-           <a href="#" class="btn btn-secondary btn-secondary--white mt-23 md:mt-48">
-             get an invite
-             <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
-               <g fill="none" fill-rule="evenodd" stroke="#000">
-                 <path d="M0 7h41.864M35.428 1l6 6-6 6" />
-               </g>
-             </svg>
-           </a>
-         </div>
-       </div>
-       <picture class="md:order-2">
-         <source media="(min-width: 992px)" srcset="images/home/desktop/create-and-share.jpg 830w">
-         <source media="(min-width: 768px)" srcset="images/home/tablet/create-and-share.jpg 273w ">
-         <source media="(min-width: 576px)" srcset="images/home/desktop/create-and-share.jpg 830w">
-         <img class="h-full w-full" src="images/home/mobile/create-and-share.jpg" alt="">
-       </picture>
-     </div>
-   </section>
+      <div class="flex items-center justify-center bg-white relative">
+        <div class="header-content-wrapper">
+          <h2 class="heading-primary text-black">
+            Beautiful stories every time
+          </h2>
+          <p class="paragraph-primary text-black mt-16 md:mt-21">
+            We provide design templates to ensure your stories look terrific.
+            Easily add photos, text, embed maps and media from other networks.
+            Then share your story with everyone.
+          </p>
+          <a href="#" class="btn btn-secondary btn-secondary--black mt-23 md:mt-48">
+            view the stories
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="none" fill-rule="evenodd" stroke="#000">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-   <section>
-     <div class="md:grid-big-small">
-       <picture>
-         <source media="(min-width: 992px)" srcset="images/home/desktop/beautiful-stories.jpg 830w">
-         <source media="(min-width: 768px)" srcset="images/home/tablet/beautiful-stories.jpg 273w ">
-         <source media="(min-width: 576px)" srcset="images/home/desktop/beautiful-stories.jpg 830w">
-         <img class="h-full w-full" src="images/home/mobile/beautiful-stories.jpg">
-       </picture>
+  <section>
+    <div class="md:grid-small-big">
+      <div class="flex items-center justify-center md:order-1 bg-white relative">
+        <div class="header-content-wrapper">
+          <h2 class="heading-primary text-black">Designed for everyone</h2>
+          <p class="paragraph-primary text-black mt-16 md:mt-21">
+            Photosnap can help you create stories that resonate with your
+            audience. Our tool is designed for photographers of all levels,
+            brands, businesses you name it.
+          </p>
+          <a href="#" class="btn btn-secondary btn-secondary--black mt-23 md:mt-48">
+            view the stories
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="none" fill-rule="evenodd" stroke="#000">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <picture class="md:order-2">
+        <source media="(min-width: 992px)" srcset="images/home/desktop/designed-for-everyone.jpg 830w" />
+        <source media="(min-width: 768px)" srcset="images/home/tablet/designed-for-everyone.jpg 273w" />
+        <source media="(min-width: 576px)" srcset="images/home/desktop/designed-for-everyone.jpg 830w" />
+        <img class="h-full w-full" src="images/home/mobile/designed-for-everyone.jpg" alt="" />
+      </picture>
+    </div>
+  </section>
 
-       <div class="flex items-center justify-center bg-white relative">
-         <div class="header-content-wrapper">
-           <h1 class="heading-primary text-black">Beautiful stories every time</h1>
-           <p class="paragraph-primary text-black mt-16 md:mt-21">
-             We provide design templates to ensure your stories look terrific. Easily add
-             photos, text, embed maps and media from other networks. Then share your story
-             with everyone.
-           </p>
-           <a href="#" class="btn btn-secondary btn-secondary--black mt-23 md:mt-48">
-             view the stories
-             <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
-               <g fill="none" fill-rule="evenodd" stroke="#000">
-                 <path d="M0 7h41.864M35.428 1l6 6-6 6" />
-               </g>
-             </svg>
-           </a>
-         </div>
-       </div>
-     </div>
-   </section>
+  <section>
+    <div class="grid lg:grid-col-4 sm:grid-col-2 grid-col-1">
+      <figure class="relative story-card">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/stories/desktop/mountains.jpg" />
+          <img class="w-full" src="images/stories/mobile/mountains.jpg" alt="mountains" />
+        </picture>
+        <div class="story-card__container">
+          <h3 class="heading-tertiary text-white">The Mountains</h3>
+          <figcaption class="text-white fs-13 font-regular">
+            by John Appleaseed
+          </figcaption>
+          <div class="horizontal-line bg-white opacity-25 mt-16"></div>
+          <a href="#" class="
+                btn btn-secondary btn-secondary--white
+                justify-between
+                mt-23
+              ">read story
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="none" fill-rule="evenodd" stroke="#000">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </figure>
 
-   <section>
-     <div class="md:grid-small-big">
-       <div class="flex items-center justify-center md:order-1 bg-white relative">
-         <div class="header-content-wrapper">
-           <h1 class="heading-primary text-black">Designed for everyone</h1>
-           <p class="paragraph-primary text-black mt-16 md:mt-21">
-             Photosnap can help you create stories that resonate with your audience. Our
-             tool is designed for photographers of all levels, brands, businesses you name it.
-           </p>
-           <a href="#" class="btn btn-secondary btn-secondary--black mt-23 md:mt-48">
-             view the stories
-             <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
-               <g fill="none" fill-rule="evenodd" stroke="#000">
-                 <path d="M0 7h41.864M35.428 1l6 6-6 6" />
-               </g>
-             </svg>
-           </a>
-         </div>
-       </div>
-       <picture class="md:order-2">
-         <source media="(min-width: 992px)" srcset="images/home/desktop/designed-for-everyone.jpg 830w">
-         <source media="(min-width: 768px)" srcset="images/home/tablet/designed-for-everyone.jpg 273w ">
-         <source media="(min-width: 576px)" srcset="images/home/desktop/designed-for-everyone.jpg 830w">
-         <img class="h-full w-full" src="images/home/mobile/designed-for-everyone.jpg" alt="">
-       </picture>
-     </div>
-   </section>
+      <figure class="relative story-card">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/stories/desktop/cityscapes.jpg" />
+          <img class="w-full" src="images/stories/mobile/cityscapes.jpg" alt="mountains" />
+        </picture>
+        <div class="story-card__container">
+          <h3 class="heading-tertiary text-white">Sunset Cityscapes</h3>
+          <figcaption class="text-white fs-13 font-regular">
+            by Benjamin Cruz
+          </figcaption>
+          <div class="horizontal-line bg-white opacity-25 mt-16"></div>
+          <a href="#" class="
+                btn btn-secondary btn-secondary--white
+                justify-between
+                mt-23
+              ">read story
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="none" fill-rule="evenodd" stroke="#000">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </figure>
 
-   <section>
-     <div class="grid lg:grid-col-4 sm:grid-col-2 grid-col-1">
-       <figure class="relative story-card">
-         <picture>
-           <source media="(min-width: 768px)" srcset="images/stories/desktop/mountains.jpg">
-           <img class="w-full" src="images/stories/mobile/mountains.jpg" alt="mountains">
-         </picture>
-         <div class="story-card__container">
-           <h3 class="heading-tertiary text-white">The Mountains</h3>
-           <figcaption class="text-white fs-13 font-regular">by John Appleaseed</figcaption>
-           <div class="horizontal-line bg-white opacity-25 mt-16"></div>
-           <a href="#" class="btn btn-secondary btn-secondary--white justify-between mt-23">read story
-             <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
-               <g fill="none" fill-rule="evenodd" stroke="#000">
-                 <path d="M0 7h41.864M35.428 1l6 6-6 6" />
-               </g>
-             </svg>
-           </a>
-         </div>
-       </figure>
+      <figure class="relative story-card">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/stories/desktop/18-days-voyage.jpg" />
+          <img class="w-full" src="images/stories/mobile/18-days-voyage.jpg" alt="mountains" />
+        </picture>
+        <div class="story-card__container">
+          <h3 class="heading-tertiary text-white">18 Days Voyage</h3>
+          <figcaption class="text-white fs-13 font-regular">
+            by Alexei Borodin
+          </figcaption>
+          <div class="horizontal-line bg-white opacity-25 mt-16"></div>
+          <a href="#" class="
+                btn btn-secondary btn-secondary--white
+                justify-between
+                mt-23
+              ">read story
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="none" fill-rule="evenodd" stroke="#000">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </figure>
 
-       <figure class="relative story-card">
-         <picture>
-           <source media="(min-width: 768px)" srcset="images/stories/desktop/cityscapes.jpg">
-           <img class="w-full" src="images/stories/mobile/cityscapes.jpg" alt="mountains">
-         </picture>
-         <div class="story-card__container">
-           <h3 class="heading-tertiary text-white">Sunset Cityscapes</h3>
-           <figcaption class="text-white fs-13 font-regular">by Benjamin Cruz</figcaption>
-           <div class="horizontal-line bg-white opacity-25 mt-16"></div>
-           <a href="#" class="btn btn-secondary btn-secondary--white justify-between mt-23">read story
-             <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
-               <g fill="none" fill-rule="evenodd" stroke="#000">
-                 <path d="M0 7h41.864M35.428 1l6 6-6 6" />
-               </g>
-             </svg>
-           </a>
-         </div>
-       </figure>
+      <figure class="relative story-card">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/stories/desktop/architecturals.jpg 360w" />
+          <img class="w-full" src="images/stories/mobile/architecturals.jpg" alt="mountains" />
+        </picture>
+        <div class="story-card__container">
+          <h3 class="heading-tertiary text-white">Architecturals</h3>
+          <figcaption class="text-white fs-13 font-regular">
+            by Samantha Brooke
+          </figcaption>
+          <div class="horizontal-line bg-white opacity-25 mt-16"></div>
+          <a href="#" class="
+                btn btn-secondary btn-secondary--white
+                justify-between
+                mt-23
+              ">read story
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="none" fill-rule="evenodd" stroke="#000">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </figure>
+    </div>
+  </section>
 
-       <figure class="relative story-card">
-         <picture>
-           <source media="(min-width: 768px)" srcset="images/stories/desktop/18-days-voyage.jpg">
-           <img class="w-full" src="images/stories/mobile/18-days-voyage.jpg" alt="mountains">
-         </picture>
-         <div class="story-card__container">
-           <h3 class="heading-tertiary text-white">18 Days Voyage</h3>
-           <figcaption class="text-white fs-13 font-regular">by Alexei Borodin</figcaption>
-           <div class="horizontal-line bg-white opacity-25 mt-16"></div>
-           <a href="#" class="btn btn-secondary btn-secondary--white justify-between mt-23">read story
-             <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
-               <g fill="none" fill-rule="evenodd" stroke="#000">
-                 <path d="M0 7h41.864M35.428 1l6 6-6 6" />
-               </g>
-             </svg>
-           </a>
-         </div>
-       </figure>
+  <section>
+    <div class="container mblock-80 md:mblock-120">
+      <div class="grid lg:grid-col-3 col-gap-3 items-baseline row-gap-56 md:row-gap-72">
+        <div class="flex flex-col items-center">
+          <img src="images/features/desktop/responsive.svg" alt="100% Responsive" />
+          <h3 class="heading-tertiary text-black mt-48">100% Responsive</h3>
+          <p class="paragraph-primary mt-16 text-center w-310 md:w-457">
+            No matter which the device you’re on, our site is fully responsive
+            and stories look beautiful on any screen.
+          </p>
+        </div>
 
-       <figure class="relative story-card">
-         <picture>
-           <source media="(min-width: 768px)" srcset="images/stories/desktop/architecturals.jpg 360w">
-           <img class="w-full" src="images/stories/mobile/architecturals.jpg" alt="mountains">
-         </picture>
-         <div class="story-card__container">
-           <h3 class="heading-tertiary text-white">Architecturals</h3>
-           <figcaption class="text-white fs-13 font-regular">by Samantha Brooke</figcaption>
-           <div class="horizontal-line bg-white opacity-25 mt-16"></div>
-           <a href="#" class="btn btn-secondary btn-secondary--white justify-between mt-23">read story
-             <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
-               <g fill="none" fill-rule="evenodd" stroke="#000">
-                 <path d="M0 7h41.864M35.428 1l6 6-6 6" />
-               </g>
-             </svg>
-           </a>
-         </div>
-       </figure>
-     </div>
-   </section>
+        <div class="flex flex-col items-center">
+          <img src="images/features/desktop/no-limit.svg" alt="no upload limit" />
+          <h3 class="heading-tertiary text-black mt-48">
+            No Photo Upload Limit
+          </h3>
+          <p class="paragraph-primary mt-16 text-center w-310 md:w-457">
+            Our tool has no limits on uploads or bandwidth. Freely upload in
+            bulk and share all of your stories in one go.
+          </p>
+        </div>
 
-   <section>
-     <div class="container">
-       <div class="grid lg:grid-col-3 gap-3">
-         <div class="feature-box text-center">
-           No matter which the device you’re on, our site is fully responsive and stories
-           look beautiful on any screen.
-         </div>
-         <div class="feature-box text-center">2</div>
-         <div class="feature-box text-center">3</div>
-       </div>
-     </div>
-   </section>
+        <div class="flex flex-col items-center">
+          <img src="images/features/desktop/embed.svg" alt="available to embed" />
+          <h3 class="heading-tertiary text-black mt-48">
+            Available to Embed
+          </h3>
+          <p class="paragraph-primary mt-16 text-center w-310 md:w-457">
+            Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
+            videos, Google Maps, and more.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-   <script src="js/script.js"></script>
- </body>
+  <script src="js/script.js"></script>
+</body>
 
- </html>
+</html>
