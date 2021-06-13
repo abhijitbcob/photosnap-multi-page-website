@@ -1,0 +1,12 @@
+/* Display utilities for different viewport width*/
+.hide-for-mobile {
+    @media only screen and(max-width: 767px) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include respond-to(medium) {
+        display: none;
+    }
+}

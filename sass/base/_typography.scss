@@ -15,6 +15,10 @@
     font-weight: var(--fs-700);
 }
 
+.font-regular {
+    font-weight: var(--fs-400);
+}
+
 .tracking-wide {
     letter-spacing: 2px;
 }
@@ -54,6 +58,11 @@
         font-size: 4rem;
         line-height: 1.2;
     }
+}
+
+.heading-tertiary {
+    font-size: 1.8rem;
+    font-weight: var(--fs-700);
 }
 
 .paragraph-primary {

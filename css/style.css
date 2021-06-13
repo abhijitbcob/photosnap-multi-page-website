@@ -38,11 +38,6 @@ li {
   list-style-type: none;
 }
 
-::selection {
-  background: var(--pure-white);
-  color: var(--pure-black);
-}
-
 :root {
   --accent-color-1: hsl(28, 100%, 79%);
   --accent-color-2: hsl(329, 36%, 59%);
@@ -70,6 +65,10 @@ li {
 
 .font-bold {
   font-weight: var(--fs-700);
+}
+
+.font-regular {
+  font-weight: var(--fs-400);
 }
 
 .tracking-wide {
@@ -112,6 +111,11 @@ li {
     font-size: 4rem;
     line-height: 1.2;
   }
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: var(--fs-700);
 }
 
 .paragraph-primary {
@@ -172,22 +176,36 @@ li {
   gap: 2rem;
 }
 
-.md\:mt-21 {
+.gap-3 {
+  gap: 3rem;
+}
+
+.mt-16 {
   margin-top: 1.6rem;
 }
+
+.mt-23 {
+  margin-top: 2.3rem;
+}
+
 @media (min-width: 768px) {
   .md\:mt-21 {
     margin-top: 2.1rem;
   }
 }
 
-.md\:mt-48 {
-  margin-top: 2.3rem;
-}
 @media (min-width: 768px) {
   .md\:mt-48 {
     margin-top: 4.8rem;
   }
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .mx-auto {
@@ -206,6 +224,14 @@ li {
   background-color: var(--pure-black);
 }
 
+.bg-light-grey {
+  background-color: var(--light-grey);
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
 .relative {
   position: relative;
 }
@@ -220,6 +246,24 @@ li {
 
 .right-0 {
   right: 0;
+}
+
+/* Display utilities for different viewport width*/
+@media only screen and (max-width: 767px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+/* Reusable grid utilities  */
+.grid {
+  display: grid;
 }
 
 .md\:grid-small-big {
@@ -257,6 +301,28 @@ li {
 @media (min-width: 768px) {
   .md\:order-2 {
     order: 2;
+  }
+}
+
+.grid-col-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 576px) {
+  .sm\:grid-col-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:grid-col-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:grid-col-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -324,18 +390,6 @@ li {
   padding-block: 2.8rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .hide-for-mobile {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .hide-for-desktop {
-    display: none;
-  }
-}
-
 #menu-toggler {
   padding: 1rem 0;
 }
@@ -372,7 +426,6 @@ li {
 .horizontal-line {
   height: 1px;
   width: 100%;
-  background-color: var(--light-grey);
 }
 
 .mobile-menu {
@@ -395,7 +448,7 @@ li {
 }
 
 .header-content-wrapper {
-  max-width: clamp(31.8rem, 20vw, 38.7rem);
+  max-width: 31.8rem;
   padding-right: 2rem;
   margin-left: 1rem;
   margin-block: 5.8rem;
@@ -404,6 +457,12 @@ li {
   .header-content-wrapper {
     padding-right: 0;
     margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .header-content-wrapper {
+    padding-inline: 0.5rem;
+    max-width: 38.7rem;
   }
 }
 
@@ -426,7 +485,6 @@ li {
 }
 
 .btn {
-  display: inline-block;
   text-transform: uppercase;
   text-align: center;
   font-size: 1.2rem;
@@ -436,6 +494,7 @@ li {
 }
 
 .btn-primary {
+  display: inline-block;
   padding-inline: 2.4rem;
   padding-block: 1.1rem;
 }
@@ -453,6 +512,9 @@ li {
 }
 
 .btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
   background-color: transparent;
   transition: all 0.2s ease;
 }
@@ -473,4 +535,37 @@ li {
 }
 .btn-secondary:hover {
   text-decoration: underline;
+}
+
+.story-card {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.story-card::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662));
+}
+.story-card__container {
+  position: absolute;
+  left: 11.43%;
+  right: 11.43%;
+  bottom: 4rem;
+  top: auto;
+}
+.story-card::after {
+  visibility: hidden;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 6px;
+  width: 100%;
+  background-image: linear-gradient(1deg, var(--accent-color-1), var(--accent-color-2), var(--accent-color-3));
+}
+.story-card:hover {
+  transform: translateY(-2.4rem);
+}
+.story-card:hover::after {
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 .header-content-wrapper {
-    max-width: clamp(31.8rem, 20vw, 38.7rem);
+    max-width: 31.8rem;
     padding-right: 2rem;
     margin-left: 1rem;
     margin-block: 5.8rem;
@@ -8,6 +8,12 @@
         padding-right: 0;
         margin-left: 0;
     }
+
+    @include respond-to(medium) {
+        padding-inline: .5rem;
+        max-width: 38.7rem;
+    }
+
 
 }
 

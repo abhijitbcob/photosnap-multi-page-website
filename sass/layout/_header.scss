@@ -33,17 +33,6 @@
     padding-block: 2.8rem;
 }
 
-.hide-for-mobile {
-    @media only screen and(max-width: 768px) {
-        display: none;
-    }
-}
-
-.hide-for-desktop {
-    @include respond-to(medium) {
-        display: none;
-    }
-}
 
 // Mobile Menu toggler
 #menu-toggler {
@@ -93,7 +82,6 @@
 .horizontal-line {
     height: 1px;
     width: 100%;
-    background-color: var(--light-grey);
 }
 
 .mobile-menu {

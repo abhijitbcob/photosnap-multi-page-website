@@ -1,0 +1,39 @@
+.story-card {
+    &::before {
+        position: absolute;
+        content: '';
+        inset: 0;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.662));
+    }
+
+    &__container {
+        position: absolute;
+        left: 11.43%;
+        right: 11.43%;
+        bottom: 4rem;
+        top: auto;
+    }
+
+
+    &::after {
+        visibility: hidden;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 6px;
+        width: 100%;
+        background-image: linear-gradient(1deg, var(--accent-color-1), var(--accent-color-2), var(--accent-color-3));
+    }
+
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-2.4rem);
+
+        &::after {
+            visibility: visible;
+        }
+    }
+
+}

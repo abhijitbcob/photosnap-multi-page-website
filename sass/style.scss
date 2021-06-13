@@ -13,9 +13,11 @@
 // 3. Reusable utility classes
 @import 'utilities/flexbox';
 @import 'utilities/spacing';
+@import 'utilities/sizing';
 @import 'utilities/alignment';
 @import 'utilities/backgrounds';
 @import 'utilities/position';
+@import 'utilities/display';
 @import 'utilities/grid';
 
 // 4. Layout-related sections
@@ -25,6 +27,7 @@
 
 // 5. Components
 @import 'components/button';
+@import 'components/story-card';
 
 // 6. Page-specific styles
 @import 'pages/home';
