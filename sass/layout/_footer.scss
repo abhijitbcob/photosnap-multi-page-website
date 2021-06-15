@@ -1,3 +1,112 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.footer {
+    padding-block: 6.4rem;
+
+    &-grid {
+        display: grid;
+        grid-column-gap: 11rem;
+
+        @include respond-to(medium) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "logo cta""navigation .""social copyright";
+
+        }
+
+
+        @include respond-to(large) {
+            grid-template-columns: 17.5rem 1fr 24.5rem;
+            grid-template-areas: "logo navigation cta""social navigation copyright";
+            grid-row-gap: 7.345rem;
+        }
+    }
+
+    &__logo {
+        grid-area: logo;
+    }
+
+    &__social {
+        grid-area: social;
+    }
+
+    &__navigation {
+        grid-area: navigation;
+
+        ul {
+            gap: 1rem;
+
+            flex-direction: column;
+
+            @include respond-to(medium) {
+                flex-direction: row;
+            }
+
+            @include respond-to(large) {
+                flex-direction: column;
+            }
+        }
+
+        ul a:link,
+        ul a:visited {
+            color: var(--pure-white);
+        }
+    }
+
+    &__cta {
+        grid-area: cta;
+
+        @include respond-to(small) {
+            justify-self: end;
+        }
+    }
+
+    &__copyright {
+        grid-area: copyright;
+
+        @include respond-to(small) {
+            justify-self: end;
+        }
+    }
+
+    &__social {
+        a:not(:last-child) {
+            margin-right: 1.3rem;
+        }
+
+        svg path {
+            transition: fill .2s;
+            fill: var(--pure-white);
+        }
+    }
+}
+
+.facebook-link:hover {
+    svg path {
+        fill: url(#a);
+    }
+}
+
+.youtube-link:hover {
+    svg path {
+        fill: url(#b);
+    }
+}
+
+.twitter-link:hover {
+    svg path {
+        fill: url(#c);
+    }
+}
+
+.pinterest-link:hover {
+    svg path {
+        fill: url(#d);
+    }
+}
+
+.instagram-link:hover {
+    svg path {
+        fill: url(#e);
+    }
+}

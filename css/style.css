@@ -124,6 +124,10 @@ li {
   opacity: 0.6;
 }
 
+.footer__copyright {
+  opacity: 0.525;
+}
+
 @keyframes fade-in {
   0% {
     visibility: hidden;
@@ -158,6 +162,18 @@ li {
 
 .flex-col {
   flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:flex-col {
+    flex-direction: column;
+  }
 }
 
 .justify-center {
@@ -518,6 +534,97 @@ li {
     background-color: white;
     background-image: linear-gradient(to top, var(--accent-color-1), var(--accent-color-2), var(--accent-color-3));
   }
+}
+
+.footer {
+  padding-block: 6.4rem;
+}
+.footer-grid {
+  display: grid;
+  grid-column-gap: 11rem;
+}
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "logo cta" "navigation ." "social copyright";
+  }
+}
+@media (min-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 17.5rem 1fr 24.5rem;
+    grid-template-areas: "logo navigation cta" "social navigation copyright";
+    grid-row-gap: 7.345rem;
+  }
+}
+.footer__logo {
+  grid-area: logo;
+}
+.footer__social {
+  grid-area: social;
+}
+.footer__navigation {
+  grid-area: navigation;
+}
+.footer__navigation ul {
+  gap: 1rem;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .footer__navigation ul {
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .footer__navigation ul {
+    flex-direction: column;
+  }
+}
+.footer__navigation ul a:link,
+.footer__navigation ul a:visited {
+  color: var(--pure-white);
+}
+.footer__cta {
+  grid-area: cta;
+}
+@media (min-width: 576px) {
+  .footer__cta {
+    justify-self: end;
+  }
+}
+.footer__copyright {
+  grid-area: copyright;
+}
+@media (min-width: 576px) {
+  .footer__copyright {
+    justify-self: end;
+  }
+}
+.footer__social a:not(:last-child) {
+  margin-right: 1.3rem;
+}
+.footer__social svg path {
+  transition: fill 0.2s;
+  fill: var(--pure-white);
+}
+
+.facebook-link:hover svg path {
+  fill: url(#a);
+}
+
+.youtube-link:hover svg path {
+  fill: url(#b);
+}
+
+.twitter-link:hover svg path {
+  fill: url(#c);
+}
+
+.pinterest-link:hover svg path {
+  fill: url(#d);
+}
+
+.instagram-link:hover svg path {
+  fill: url(#e);
 }
 
 .btn {
