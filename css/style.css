@@ -626,7 +626,7 @@ li {
   }
 }
 .footer__social a:not(:last-child) {
-  margin-right: 1.3rem;
+  margin-right: 0.87rem;
 }
 .footer__social svg path {
   transition: fill 0.2s;
