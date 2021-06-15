@@ -507,15 +507,9 @@ li {
 
 .header-content-wrapper {
   max-width: 31.8rem;
-  padding-right: 2rem;
-  margin-left: 1rem;
+  padding-right: 1rem;
+  margin-inline: 3.3rem;
   margin-block: 5.8rem;
-}
-@media (min-width: 576px) {
-  .header-content-wrapper {
-    padding-right: 0;
-    margin-left: 0;
-  }
 }
 @media (min-width: 768px) {
   .header-content-wrapper {
