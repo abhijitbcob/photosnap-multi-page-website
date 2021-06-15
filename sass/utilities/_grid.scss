@@ -1,22 +1,19 @@
 /* Reusable grid utilities  */
-
 .grid {
     display: grid;
 }
 
-.md\:grid-small-big {
-    display: grid;
-    grid-template-columns: 1fr;
+.grid-col-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 
+.md\:grid-small-big {
     @include respond-to(medium) {
         grid-template-columns: minmax(49.5rem, 6.1fr) minmax(27.3rem, 8.3fr);
     }
 }
 
 .md\:grid-big-small {
-    display: grid;
-    grid-template-columns: 1fr;
-
     @include respond-to(medium) {
         grid-template-columns: minmax(27.3rem, 8.3fr) minmax(49.5rem, 6.1fr);
     }
@@ -38,9 +35,7 @@
     }
 }
 
-.grid-col-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-}
+
 
 .sm\:grid-col-2 {
     @include respond-to(small) {

@@ -27,7 +27,7 @@
                       fs-12
                       hover:text-opacity-30
                       tracking-wide
-                    " href="#">stories</a>
+                    " href="stories.html">stories</a>
               </li>
               <li>
                 <a class="
@@ -36,7 +36,7 @@
                       fs-12
                       hover:text-opacity-30
                       tracking-wide
-                    " href="#">features</a>
+                    " href="features.html">features</a>
               </li>
               <li>
                 <a class="
@@ -45,7 +45,7 @@
                       fs-12
                       hover:text-opacity-30
                       tracking-wide
-                    " href="#">pricing</a>
+                    " href="pricing.html">pricing</a>
               </li>
             </ul>
           </nav>
@@ -100,7 +100,7 @@
   </header>
 
   <section>
-    <div class="md:grid-small-big">
+    <div class="grid grid-col-1 md:grid-small-big">
       <div class="flex items-center justify-center md:order-1 bg-black relative">
         <div class="header-content-wrapper">
           <div class="vertical-gradient-bar"></div>
@@ -132,7 +132,7 @@
   </section>
 
   <section>
-    <div class="md:grid-big-small">
+    <div class="grid grid-col-1 md:grid-big-small">
       <picture>
         <source media="(min-width: 992px)" srcset="images/home/desktop/beautiful-stories.jpg 830w" />
         <source media="(min-width: 768px)" srcset="images/home/tablet/beautiful-stories.jpg 273w" />
@@ -164,7 +164,7 @@
   </section>
 
   <section>
-    <div class="md:grid-small-big">
+    <div class="grid grid-col-1 md:grid-small-big">
       <div class="flex items-center justify-center md:order-1 bg-white relative">
         <div class="header-content-wrapper">
           <h2 class="heading-primary text-black">Designed for everyone</h2>
@@ -298,10 +298,19 @@
 
   <section>
     <div class="container mblock-80 md:mblock-120">
-      <div class="grid lg:grid-col-3 col-gap-3 items-baseline row-gap-56 md:row-gap-72">
+      <div class="
+            grid
+            lg:grid-col-3
+            col-gap-3
+            items-baseline
+            row-gap-56
+            md:row-gap-72
+          ">
         <div class="flex flex-col items-center">
           <img src="images/features/desktop/responsive.svg" alt="100% Responsive" />
-          <h3 class="heading-tertiary text-black text-center mt-48">100% Responsive</h3>
+          <h3 class="heading-tertiary text-black text-center mt-48">
+            100% Responsive
+          </h3>
           <p class="paragraph-primary mt-16 text-center w-310 md:w-457">
             No matter which the device you’re on, our site is fully responsive
             and stories look beautiful on any screen.
@@ -353,9 +362,8 @@
           </svg>
         </a>
 
-
         <div class="footer__social">
-          <a class='facebook-link' href="#">
+          <a class="facebook-link" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
               <defs>
                 <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
@@ -428,14 +436,42 @@
 
         <nav class="footer__navigation">
           <ul class="flex">
-            <li class="text-center md:text-left"><a
-                class="uppercase font-bold fs-12 tracking-wide hover:text-opacity-30" href="#">home</a></li>
-            <li class="text-center md:text-left"><a
-                class="uppercase font-bold fs-12 tracking-wide hover:text-opacity-30" href="#">stories</a></li>
-            <li class="text-center md:text-left"><a
-                class="uppercase font-bold fs-12 tracking-wide hover:text-opacity-30" href="#">features</a></li>
-            <li class="text-center md:text-left"><a
-                class="uppercase font-bold fs-12 tracking-wide hover:text-opacity-30" href="#">pricing</a></li>
+            <li class="text-center md:text-left">
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-12
+                    tracking-wide
+                    hover:text-opacity-30
+                  " href="index.html">home</a>
+            </li>
+            <li class="text-center md:text-left">
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-12
+                    tracking-wide
+                    hover:text-opacity-30
+                  " href="stories.html">stories</a>
+            </li>
+            <li class="text-center md:text-left">
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-12
+                    tracking-wide
+                    hover:text-opacity-30
+                  " href="features.html">features</a>
+            </li>
+            <li class="text-center md:text-left">
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-12
+                    tracking-wide
+                    hover:text-opacity-30
+                  " href="pricing.html">pricing</a>
+            </li>
           </ul>
         </nav>
 
@@ -448,7 +484,9 @@
           </svg>
         </a>
 
-        <p class="footer__copyright fs-15 font-regular text-white">Copyright 2021. All Rights Reserved</p>
+        <p class="footer__copyright fs-15 font-regular text-white">
+          Copyright 2021. All Rights Reserved
+        </p>
       </div>
     </div>
   </footer>

@@ -1,14 +1,8 @@
 .header-content-wrapper {
-    max-width: 31.8rem;
+    max-width: 38rem;
     padding-right: 1rem;
     margin-inline: 3.3rem;
     margin-block: 5.8rem;
-
-    @include respond-to(medium) {
-        padding-inline: .5rem;
-        max-width: 38.7rem;
-    }
-
 }
 
 .vertical-gradient-bar {
