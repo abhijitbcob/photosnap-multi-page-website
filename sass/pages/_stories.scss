@@ -1,0 +1,13 @@
+.hero-background {
+    background-position: center;
+    background-size: cover;
+
+    @include respond-to(medium) {
+        padding-block: 9rem;
+        background-image: url('../../images/stories/tablet/moon-of-appalacia.jpg');
+    }
+
+    @include respond-to(large) {
+        background-image: url('../../images/stories/desktop/moon-of-appalacia.jpg');
+    }
+}

@@ -1,126 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
   <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  Stories
-  Features
-  Pricing
+  <header class="header bg-white">
+    <div class="overlay has-fade hide-for-desktop"></div>
+    <div class="bg-white relative">
+      <div class="container">
+        <div class="flex justify-between items-center bg-white">
+          <a href="#"><img class="logo-img" src="images/shared/desktop/logo.svg" alt="logo" /></a>
+          <nav class="desktop-navigation hide-for-mobile">
+            <ul class="flex justify-between">
+              <li>
+                <a class="
+                      uppercase
+                      font-bold
+                      fs-12
+                      hover:text-opacity-30
+                      tracking-wide
+                    " href="stories.html">stories</a>
+              </li>
+              <li>
+                <a class="
+                      uppercase
+                      font-bold
+                      fs-12
+                      hover:text-opacity-30
+                      tracking-wide
+                    " href="features.html">features</a>
+              </li>
+              <li>
+                <a class="
+                      uppercase
+                      font-bold
+                      fs-12
+                      hover:text-opacity-30
+                      tracking-wide
+                    " href="pricing.html">pricing</a>
+              </li>
+            </ul>
+          </nav>
 
-  Get an invite
+          <div class="hide-for-mobile">
+            <a href="#" class="btn btn-primary btn-primary--black">get an invite</a>
+          </div>
+          <div id="menu-toggler" class="hide-for-desktop">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white absolute left-0 right-0 has-fade">
+      <div class="mobile-menu container hide-for-desktop flex flex-col">
+        <nav class="mobile-navigation">
+          <ul class="flex flex-col items-center">
+            <li>
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-15
+                    hover:text-opacity-30
+                    tracking-wide
+                  " href="#">stories</a>
+            </li>
+            <li>
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-15
+                    hover:text-opacity-30
+                    tracking-wide
+                  " href="#">features</a>
+            </li>
+            <li>
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-15
+                    hover:text-opacity-30
+                    tracking-wide
+                  " href="#">pricing</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="horizontal-line bg-light-grey"></div>
+        <a href="#" class="btn btn-primary btn-primary--black">get an invite</a>
+      </div>
+    </div>
+  </header>
 
-  Last month's featured story
+  <section>
+    <div class="hero-background">
+      <div class="grid grid-col-1 md:grid-small-big">
+        <div class="flex items-center justify-center md:order-1 bg-black md:bg-transparent">
+          <div class="header-content-wrapper mblock-50">
+            <h4 class="uppercase font-bold fs-12 text-white tracking-wide">last month's featured story</h4>
+            <h1 class="heading-primary text-white mt-12 md:mt-21">
+              Hazy full moon of Appalachia
+            </h1>
+            <div class="flex mt-12">
+              <time datetime="2021-03-02" class="fs-13 text-white font-regular opacity-75">
+                March 2nd 2021
+              </time>
+              <p class="fs-13 text-white font-regular">&NonBreakingSpace; by John Appleseed</p>
+            </div>
 
-  Hazy full moon of Appalachia
-  March 2nd 2020
-  by John Appleseed
+            <p class="paragraph-primary text-white mt-25">
+              The dissected plateau area, while not actually made up of geological mountains,
+              is popularly called "mountains," especially in eastern Kentucky and West Virginia,
+              and while the ridges are not high, the terrain is extremely rugged.
+            </p>
+            <a href="#" class="btn btn-secondary btn-secondary--white mt-23">
+              Read the story
+              <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                <g fill="none" fill-rule="evenodd" stroke="#000">
+                  <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
 
-  The dissected plateau area, while not actually made up of geological mountains, 
-  is popularly called "mountains," especially in eastern Kentucky and West Virginia, 
-  and while the ridges are not high, the terrain is extremely rugged.
+        <div class="hide-for-desktop md:order-2">
+          <img class="w-full" src="images/stories/mobile/moon-of-appalacia.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 
-  Read the story
 
-  April 16th 2020
-  The Mountains
-  by John Appleseed
-  Read Story
 
-  April 14th 2020
-  Sunset Cityscapes
-  by Benjamin Cruz
-  Read Story
-
-  April 11th 2020
-  18 Days Voyage
-  by Alexei Borodin
-  Read Story
-
-  April 9th 2020
-  Architecturals
-  by Samantha Brooke
-  Read Story
-
-  April 7th 2020
-  World Tour 2019
-  by Timothy Wagner
-  Read Story
-
-  April 7th 2020
-  World Tour 2019
-  by Timothy Wagner
-  Read Story
-
-  April 3rd 2020
-  Unforeseen Corners
-  by William Malcolm
-  Read Story
-
-  March 29th 2020
-  King on Africa: Part II
-  by Tim Hillenburg
-  Read Story
-
-  March 21st 2020
-  The Trip to Nowhere
-  by Felicia Rourke
-  Read Story
-
-  March 19th 2020
-  Rage of The Sea
-  by Mohammed Abdul
-  Read Story
-
-  March 16th 2020
-  Running Free
-  by Michelle
-  Read Story
-
-  March 11th 2020
-  Behind the Waves
-  by Lamarr Wilson
-  Read Story
-
-  March 9th 2020
-  Calm Waters
-  by Samantha Brooke
-  Read Story
-
-  March 5th 2020
-  The Milky Way
-  by Benjamin Cruz
-  Read Story
-
-  March 4th 2020
-  Night at The Dark Forest
-  by  Mohammed Abdul
-  Read Story
-
-  March 1st 2020
-  Somwarpet’s Beauty
-  by Michelle
-  Read Story
-
-  February 25th 2020
-  Land of Dreams
-  by William Malcolm
-  Read Story
-
-  Home
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Copyright 2019. All Rights Reserved
-
+  <script src="js/script.js"></script>
 </body>
+
 </html>
