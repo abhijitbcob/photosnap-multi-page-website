@@ -53,6 +53,7 @@
     font-size: 3.2rem;
     font-weight: var(--fs-700);
     line-height: 1.25;
+    letter-spacing: 4.17px;
 
     @include respond-to(small) {
         font-size: 4rem;

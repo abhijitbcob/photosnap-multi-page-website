@@ -1,6 +1,5 @@
 .header-content-wrapper {
-    max-width: 38rem;
-    padding-right: 1rem;
+    max-width: 39rem;
     margin-inline: 3.3rem;
 }
 
@@ -9,7 +8,7 @@
     top: 0;
     height: 6px;
     width: 12.8rem;
-    background-image: linear-gradient(1deg, var(--accent-color-1), var(--accent-color-2), var(--accent-color-3));
+    background-image: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
 
     @include respond-to(medium) {
         top: auto;
