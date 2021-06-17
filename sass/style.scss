@@ -12,13 +12,13 @@
 
 // 3. Reusable utility classes
 @import 'utilities/flexbox';
+@import 'utilities/grid';
 @import 'utilities/spacing';
 @import 'utilities/sizing';
 @import 'utilities/alignment';
 @import 'utilities/backgrounds';
 @import 'utilities/layout';
 
-@import 'utilities/grid';
 
 // 4. Layout-related sections
 @import 'layout/container';

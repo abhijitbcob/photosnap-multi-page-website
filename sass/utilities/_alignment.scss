@@ -2,6 +2,8 @@
     margin-inline: auto;
 }
 
+
+
 .text-center {
     text-align: center;
 }
@@ -9,5 +11,11 @@
 .md\:text-left {
     @include respond-to(medium) {
         text-align: left;
+    }
+}
+
+.md\:text-right {
+    @include respond-to(medium) {
+        text-align: right;
     }
 }

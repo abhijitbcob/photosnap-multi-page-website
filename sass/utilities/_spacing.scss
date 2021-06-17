@@ -6,6 +6,12 @@
     gap: 2rem;
 }
 
+.md\:gap-0 {
+    @include respond-to(medium) {
+        gap: 0;
+    }
+}
+
 .md\:col-gap-2 {
     grid-column-gap: 2rem;
 }
