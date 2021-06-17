@@ -16,8 +16,8 @@
 @import 'utilities/sizing';
 @import 'utilities/alignment';
 @import 'utilities/backgrounds';
-@import 'utilities/position';
-@import 'utilities/display';
+@import 'utilities/layout';
+
 @import 'utilities/grid';
 
 // 4. Layout-related sections
@@ -33,3 +33,4 @@
 // 6. Page-specific styles
 @import 'pages/home';
 @import 'pages/stories';
+@import 'pages/features';
