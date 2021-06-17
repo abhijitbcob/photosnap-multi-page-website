@@ -1,68 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
   <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  Stories
-  Features
-  Pricing
+  <header class="header bg-white">
+    <div class="overlay has-fade hide-for-desktop"></div>
+    <div class="bg-white relative">
+      <div class="container">
+        <div class="flex justify-between items-center bg-white">
+          <a href="index.html"><img class="logo-img" src="images/shared/desktop/logo.svg" alt="logo" /></a>
+          <nav class="desktop-navigation hide-for-mobile">
+            <ul class="flex justify-between">
+              <li>
+                <a class="
+                      uppercase
+                      font-bold
+                      fs-12
+                      hover:text-opacity-30
+                      tracking-wide
+                    " href="stories.html">stories</a>
+              </li>
+              <li>
+                <a class="
+                      uppercase
+                      font-bold
+                      fs-12
+                      hover:text-opacity-30
+                      tracking-wide
+                    " href="features.html">features</a>
+              </li>
+              <li>
+                <a class="
+                      uppercase
+                      font-bold
+                      fs-12
+                      hover:text-opacity-30
+                      tracking-wide
+                    " href="pricing.html">pricing</a>
+              </li>
+            </ul>
+          </nav>
 
-  Get an invite
+          <div class="hide-for-mobile">
+            <a href="#" class="btn btn-primary btn-primary--black">get an invite</a>
+          </div>
+          <div id="menu-toggler" class="hide-for-desktop">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white absolute left-0 right-0 has-fade">
+      <div class="mobile-menu container hide-for-desktop flex flex-col">
+        <nav class="mobile-navigation">
+          <ul class="flex flex-col items-center">
+            <li>
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-15
+                    hover:text-opacity-30
+                    tracking-wide
+                  " href="#">stories</a>
+            </li>
+            <li>
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-15
+                    hover:text-opacity-30
+                    tracking-wide
+                  " href="#">features</a>
+            </li>
+            <li>
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-15
+                    hover:text-opacity-30
+                    tracking-wide
+                  " href="#">pricing</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="horizontal-line bg-light-grey"></div>
+        <a href="#" class="btn btn-primary btn-primary--black">get an invite</a>
+      </div>
+    </div>
+  </header>
 
-  Features
+  <section>
+    <div class="grid grid-col-1 md:grid-small-big">
+      <div class="flex items-center justify-center md:order-1 bg-black relative">
+        <div class="header-content-wrapper mblock-80 pr-1">
+          <div class="gradient-bar gradient-bar--short"></div>
+          <div>
+            <h1 class="heading-primary text-white">
+              Features
+            </h1>
+            <p class="paragraph-primary text-white mt-16 md:mt-21">
+              We make sure all of our features are designed to be loved by every aspiring and even
+              professional photograpers who wanted to share their stories.
+            </p>
+          </div>
+        </div>
+      </div>
+      <picture class="md:order-2">
+        <source media="(min-width: 992px)" srcset="images/features/desktop/hero.jpg 830w" />
+        <source media="(min-width: 768px)" srcset="images/features/tablet/hero.jpg 273w" />
+        <source media="(min-width: 576px)" srcset="images/features/desktop/hero.jpg 830w" />
+        <img class="h-full w-full" src="images/features/mobile/hero.jpg" alt="" />
+      </picture>
+    </div>
+  </section>
 
-  We make sure all of our features are designed to be loved by every aspiring and even 
-  professional photograpers who wanted to share their stories.
+  <section>
+    <div class="container">
+      <div class="grid lg:grid-col-3 md:grid-col-2 grid-col-1 items-baseline lg:col-gap-3 md:col-gap-2">
+        <div class="flex flex-col items-center">
+          <img src="images/features/desktop/responsive.svg" alt="100% Responsive" />
+          <h3 class="heading-tertiary text-black text-center mt-48">
+            100% Responsive
+          </h3>
+          <p class="paragraph-primary mt-16 text-center w-310 md:w-457">
+            No matter which the device you’re on, our site is fully responsive
+            and stories look beautiful on any screen.
+          </p>
+        </div>
 
-  100% Responsive
+        <div class="flex flex-col items-center">
+          <img src="images/features/desktop/no-limit.svg" alt="no upload limit" />
+          <h3 class="heading-tertiary text-black text-center mt-48">
+            No Photo Upload Limit
+          </h3>
+          <p class="paragraph-primary mt-16 text-center w-310 md:w-457">
+            Our tool has no limits on uploads or bandwidth. Freely upload in
+            bulk and share all of your stories in one go.
+          </p>
+        </div>
 
-  No matter which the device you’re on, our site is fully responsive and stories 
-  look beautiful on any screen.
+        <div class="flex flex-col items-center">
+          <img src="images/features/desktop/embed.svg" alt="available to embed" />
+          <h3 class="heading-tertiary text-black text-center mt-48">
+            Available to Embed
+          </h3>
+          <p class="paragraph-primary mt-16 text-center w-310 md:w-457">
+            Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
+            videos, Google Maps, and more.
+          </p>
+        </div>
 
-  No Photo Upload Limit
+        <div class="flex flex-col items-center">
+          <img src="images/features/desktop/responsive.svg" alt="100% Responsive" />
+          <h3 class="heading-tertiary text-black text-center mt-48">
+            100% Responsive
+          </h3>
+          <p class="paragraph-primary mt-16 text-center w-310 md:w-457">
+            No matter which the device you’re on, our site is fully responsive
+            and stories look beautiful on any screen.
+          </p>
+        </div>
 
-  Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share 
-  all of your stories in one go.
+        <div class="flex flex-col items-center">
+          <img src="images/features/desktop/no-limit.svg" alt="no upload limit" />
+          <h3 class="heading-tertiary text-black text-center mt-48">
+            No Photo Upload Limit
+          </h3>
+          <p class="paragraph-primary mt-16 text-center w-310 md:w-457">
+            Our tool has no limits on uploads or bandwidth. Freely upload in
+            bulk and share all of your stories in one go.
+          </p>
+        </div>
 
-  Available to Embed
+        <div class="flex flex-col items-center">
+          <img src="images/features/desktop/embed.svg" alt="available to embed" />
+          <h3 class="heading-tertiary text-black text-center mt-48">
+            Available to Embed
+          </h3>
+          <p class="paragraph-primary mt-16 text-center w-310 md:w-457">
+            Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
+            videos, Google Maps, and more.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google 
-  Maps, and more. 
 
-  Custom Domain
-
-  With Photosnap subscriptions you can host your stories on your own domain. You can 
-  also remove our branding!
-
-  Boost Your Exposure
-
-  Users that viewed your story or gallery can easily get notifed of new and featured 
-  stories with our built in mailing list.
-
-  Drag & Drop Image
-
-  Easily drag and drop your image and get beautiful shots everytime. No over the top 
-  tooling to add friction to creating stories.
-
-  We're in Beta. Get your invite today!
-  
-  Get an invite
-
-  Home
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Copyright 2019. All Rights Reserved
-
+  <script src="js/script.js"></script>
 </body>
+
 </html>

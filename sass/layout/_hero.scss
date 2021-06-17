@@ -3,7 +3,7 @@
     margin-inline: 3.3rem;
 }
 
-.vertical-gradient-bar {
+.gradient-bar {
     position: absolute;
     top: 0;
     height: 6px;
@@ -14,8 +14,15 @@
         top: auto;
         left: 0;
         width: 6px;
-        height: 30.4rem;
         background-color: white;
         background-image: linear-gradient(to top, var(--accent-color-1), var(--accent-color-2), var(--accent-color-3));
+
+        &--short {
+            height: 14.4rem;
+        }
+
+        &--long {
+            height: 30.4rem;
+        }
     }
 }

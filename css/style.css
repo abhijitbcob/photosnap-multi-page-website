@@ -201,8 +201,14 @@ li {
   gap: 2rem;
 }
 
-.col-gap-3 {
-  grid-column-gap: 3rem;
+.md\:col-gap-2 {
+  grid-column-gap: 2rem;
+}
+
+@media (min-width: 992px) {
+  .lg\:col-gap-3 {
+    grid-column-gap: 3rem;
+  }
 }
 
 .mt-16 {
@@ -429,17 +435,17 @@ li {
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 689px;
+    max-width: 713px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    max-width: 860px;
+    max-width: 884px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 960px;
+    max-width: 984px;
   }
 }
 @media (min-width: 1400px) {
@@ -539,7 +545,7 @@ li {
   margin-inline: 3.3rem;
 }
 
-.vertical-gradient-bar {
+.gradient-bar {
   position: absolute;
   top: 0;
   height: 6px;
@@ -547,13 +553,18 @@ li {
   background-image: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
 }
 @media (min-width: 768px) {
-  .vertical-gradient-bar {
+  .gradient-bar {
     top: auto;
     left: 0;
     width: 6px;
-    height: 30.4rem;
     background-color: white;
     background-image: linear-gradient(to top, var(--accent-color-1), var(--accent-color-2), var(--accent-color-3));
+  }
+  .gradient-bar--short {
+    height: 14.4rem;
+  }
+  .gradient-bar--long {
+    height: 30.4rem;
   }
 }
 
