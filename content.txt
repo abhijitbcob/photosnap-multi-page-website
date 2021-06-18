@@ -1,36 +1,42 @@
-Features
+Pricing
 
-  We make sure all of our features are designed to be loved by every aspiring and even 
-  professional photograpers who wanted to share their stories.
+  Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
+  It’s the simple way to create and share your photos.
 
-  100% Responsive
+  Monthly
+  Yearly
 
-  No matter which the device you’re on, our site is fully responsive and stories 
-  look beautiful on any screen.
+  Basic
+  Includes basic usage of our platform. Recommended for new and aspiring photographers.
+  $19.00 per month
+  $190.00 per year
+  Pick Plan
 
-  No Photo Upload Limit
+  Pro
+  More advanced features available. Recommended for photography veterans and professionals.
+  $39.00 per month
+  $390.00 per year
+  Pick Plan
 
-  Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share 
-  all of your stories in one go.
+  Business
+  Additional features available such as more detailed metrics. Recommended for business owners.
+  $99.00 per month
+  $990.00 per year
+  Pick Plan
 
-  Available to Embed
+  Compare
 
-  Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google 
-  Maps, and more. 
+  The Features
 
-  Custom Domain
+  Basic
+  Pro
+  Business
 
-  With Photosnap subscriptions you can host your stories on your own domain. You can 
-  also remove our branding!
-
-  Boost Your Exposure
-
-  Users that viewed your story or gallery can easily get notifed of new and featured 
-  stories with our built in mailing list.
-
-  Drag & Drop Image
-
-  Easily drag and drop your image and get beautiful shots everytime. No over the top 
-  tooling to add friction to creating stories.
-
-  We're in Beta. Get your invite today!
+  Unlimited Story Posting
+  Unlimited Photo Upload
+  Embedding Custom Content
+  Customize Metadata
+  Advanced Metrics
+  Photo Downloads
+  Search Engine Indexing
+  Custom Analytics

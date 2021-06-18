@@ -1,76 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
   <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+  <header class="header bg-white">
+    <div class="overlay has-fade hide-for-desktop"></div>
+    <div class="bg-white relative">
+      <div class="container">
+        <div class="flex justify-between items-center bg-white">
+          <a href="index.html"><img class="logo-img" src="images/shared/desktop/logo.svg" alt="logo" /></a>
+          <nav class="desktop-navigation hide-for-mobile">
+            <ul class="flex justify-between">
+              <li>
+                <a class="
+                      uppercase
+                      font-bold
+                      fs-12
+                      hover:text-opacity-30
+                      tracking-wide
+                    " href="stories.html">stories</a>
+              </li>
+              <li>
+                <a class="
+                      uppercase
+                      font-bold
+                      fs-12
+                      hover:text-opacity-30
+                      tracking-wide
+                    " href="features.html">features</a>
+              </li>
+              <li>
+                <a class="
+                      uppercase
+                      font-bold
+                      fs-12
+                      hover:text-opacity-30
+                      tracking-wide
+                    " href="pricing.html">pricing</a>
+              </li>
+            </ul>
+          </nav>
 
-  Stories
-  Features
-  Pricing
+          <div class="hide-for-mobile">
+            <a href="#" class="btn btn-primary btn-primary--black">get an invite</a>
+          </div>
+          <div id="menu-toggler" class="hide-for-desktop">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white absolute left-0 right-0 has-fade">
+      <div class="mobile-menu container hide-for-desktop flex flex-col">
+        <nav class="mobile-navigation">
+          <ul class="flex flex-col items-center">
+            <li>
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-15
+                    hover:text-opacity-30
+                    tracking-wide
+                  " href="stories.html">stories</a>
+            </li>
+            <li>
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-15
+                    hover:text-opacity-30
+                    tracking-wide
+                  " href="features.html">features</a>
+            </li>
+            <li>
+              <a class="
+                    uppercase
+                    font-bold
+                    fs-15
+                    hover:text-opacity-30
+                    tracking-wide
+                  " href="pricing.html">pricing</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="horizontal-line bg-light-grey"></div>
+        <a href="#" class="btn btn-primary btn-primary--black">get an invite</a>
+      </div>
+    </div>
+  </header>
 
-  Get an invite
+  <section>
+    <div class="grid grid-col-1 md:grid-small-big">
+      <div class="flex items-center justify-center md:order-1 bg-black relative">
+        <div class="header-content-wrapper mblock-80 pr-1">
+          <div class="gradient-bar gradient-bar--short"></div>
+          <div>
+            <h1 class="heading-primary text-white">Pricing</h1>
+            <p class="paragraph-primary text-white mt-16 md:mt-21">
+              Create a your stories, Photosnap is a platform for photographers and visual storytellers.
+              It’s the simple way to create and share your photos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <picture class="md:order-2">
+        <source media="(min-width: 992px)" srcset="images/pricing/desktop/hero.jpg 830w" />
+        <source media="(min-width: 768px)" srcset="images/pricing/tablet/hero.jpg 273w" />
+        <source media="(min-width: 576px)" srcset="images/pricing/desktop/hero.jpg 830w" />
+        <img class="h-full w-full" src="images/pricing/mobile/hero.jpg" alt="" />
+      </picture>
+    </div>
+  </section>
 
-  Pricing
-
-  Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
-  It’s the simple way to create and share your photos.
-
-  Monthly
-  Yearly
-
-  Basic
-  Includes basic usage of our platform. Recommended for new and aspiring photographers.
-  $19.00 per month
-  $190.00 per year
-  Pick Plan
-
-  Pro
-  More advanced features available. Recommended for photography veterans and professionals.
-  $39.00 per month
-  $390.00 per year
-  Pick Plan
-
-  Business
-  Additional features available such as more detailed metrics. Recommended for business owners.
-  $99.00 per month
-  $990.00 per year
-  Pick Plan
-
-  Compare
-
-  The Features
-
-  Basic
-  Pro
-  Business
-
-  Unlimited Story Posting
-  Unlimited Photo Upload
-  Embedding Custom Content
-  Customize Metadata
-  Advanced Metrics
-  Photo Downloads
-  Search Engine Indexing
-  Custom Analytics
-
-  We're in Beta. Get your invite today!
-  
-  Get an invite
-
-  Home
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Copyright 2019. All Rights Reserved
-
+  <script src="js/script.js"></script>
 </body>
+
 </html>
