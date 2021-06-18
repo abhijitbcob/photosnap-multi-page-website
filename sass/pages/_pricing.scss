@@ -1,0 +1,151 @@
+/* Pricing section - toggle button */
+
+.toggle {
+    --metric-toggle-thumb-size: 2.4rem;
+    --metric-toggle-thumb-space: 0.4rem;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+
+.right-label {
+    opacity: 0.5;
+}
+
+.toggle__element {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: var(--metric-toggle-thumb-size);
+    width: 1em;
+    height: 1em;
+}
+
+:checked~.toggle__decor {
+    background: var(--pure-black);
+
+    .toggle__thumb {
+        background-color: var(--pure-white);
+    }
+}
+
+:checked~.right-label {
+    opacity: 1;
+}
+
+:checked~.left-label {
+    opacity: 0.5;
+}
+
+.toggle__decor {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: calc((var(--metric-toggle-thumb-size) * 2) + (var(--metric-toggle-thumb-space) * 4));
+    height: calc(var(--metric-toggle-thumb-size) + (var(--metric-toggle-thumb-space) * 2));
+    background-color: var(--light-grey);
+    border-radius: var(--metric-toggle-thumb-size);
+    box-sizing: content-box;
+}
+
+.toggle__thumb {
+    display: grid;
+    place-items: center;
+    width: var(--metric-toggle-thumb-size);
+    height: var(--metric-toggle-thumb-size);
+    border-radius: var(--metric-toggle-thumb-size);
+    background: var(--pure-black);
+    box-shadow: var(--generic-shadow);
+    position: absolute;
+    top: var(--metric-toggle-thumb-space);
+    left: var(--metric-toggle-thumb-space);
+    transition: transform 200ms cubic-bezier(1, 0, 0.55, 0.85);
+    will-change: transform;
+    z-index: 1;
+}
+
+:checked~.toggle__decor:hover .toggle__thumb {
+    margin-left: -1px;
+}
+
+:checked~.toggle__decor .toggle__thumb {
+    transform: translateX(calc(var(--metric-toggle-thumb-size) + 2*var(--metric-toggle-thumb-space))) rotate(270deg);
+}
+
+.toggle__decor:hover .toggle__thumb {
+    margin-left: 1px;
+}
+
+/* Pricing section - pricing card */
+.pricing-card {
+    background-color: var(--light-grey-2);
+    padding-inline: 4rem;
+    padding-top: 4.8rem;
+    padding-bottom: 4rem;
+
+    &--highlight {
+        background-color: var(--pure-black);
+        padding-top: 8rem;
+        padding-bottom: 7rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 6px;
+            width: 100%;
+            background-image: linear-gradient(0.6deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+
+        }
+    }
+
+
+    &-grid {
+        display: grid;
+
+        @include respond-to(medium) {
+            grid-template-columns: minmax(0, 27rem) 1fr;
+        }
+
+        @include respond-to(large) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__header {
+        text-align: center;
+
+        @include respond-to(medium) {
+            text-align: left;
+        }
+
+        @include respond-to(large) {
+            text-align: center;
+        }
+    }
+
+    &__price-block {
+        margin-top: 3.2rem;
+        align-items: center;
+
+
+        @include respond-to(medium) {
+            margin-top: 0;
+            align-items: flex-end;
+        }
+
+        @include respond-to(large) {
+            margin-top: 3.2rem;
+            align-items: center;
+        }
+    }
+
+    &__cta {
+        margin-top: 5rem;
+    }
+
+}

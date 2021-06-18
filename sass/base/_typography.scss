@@ -43,6 +43,10 @@
     font-size: 1.8rem;
 }
 
+.fs-40 {
+    font-size: 4rem;
+}
+
 .hover\:text-opacity-30:hover {
     transition: all .2s;
     opacity: 30%;
@@ -74,4 +78,9 @@
 
 .footer__copyright {
     opacity: 0.525;
+}
+
+// Line height
+.lh-1 {
+    line-height: 1;
 }

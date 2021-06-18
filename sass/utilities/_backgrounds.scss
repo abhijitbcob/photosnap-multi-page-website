@@ -18,6 +18,8 @@
     opacity: 0.75;
 }
 
+
+
 .md\:bg-transparent {
     @include respond-to(medium) {
         background-color: transparent;

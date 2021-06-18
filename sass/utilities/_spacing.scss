@@ -6,6 +6,16 @@
     gap: 2rem;
 }
 
+.gap-24 {
+    gap: 2.4rem;
+}
+
+.gap-3 {
+    gap: 3rem;
+}
+
+
+
 .md\:gap-0 {
     @include respond-to(medium) {
         gap: 0;
@@ -29,6 +39,8 @@
 .mt-23 {
     margin-top: 2.3rem;
 }
+
+
 
 .mt-48 {
     margin-top: 4.8rem;
@@ -69,7 +81,7 @@
 
 .md\:mblock-120 {
     @include respond-to(medium) {
-        margin-top: 12rem;
+        margin-block: 12rem;
     }
 }
 
