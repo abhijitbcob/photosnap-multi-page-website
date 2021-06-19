@@ -80,6 +80,15 @@
 }
 
 /* Pricing section - pricing card */
+.section-pricing {
+    padding-block: 6.4rem;
+
+    @include respond-to(medium) {
+        padding-block: 11.2rem;
+    }
+}
+
+
 .pricing-card {
     background-color: var(--light-grey-2);
     padding-inline: 4rem;
@@ -100,6 +109,15 @@
             width: 100%;
             background-image: linear-gradient(0.6deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
 
+            @include respond-to(medium) {
+                height: 100%;
+                width: 6px;
+            }
+
+            @include respond-to(large) {
+                height: 6px;
+                width: 100%;
+            }
         }
     }
 
