@@ -47,25 +47,27 @@ const yearlyPrices = {
 
 let subscriptionMonthly = true;
 
-toggleButton.addEventListener("click", function () {
-  if (subscriptionMonthly) {
-    basicPrice.textContent = yearlyPrices.basic;
-    proPrice.textContent = yearlyPrices.pro;
-    businessPrice.textContent = yearlyPrices.business;
+if (toggleButton) {
+  toggleButton.addEventListener("click", function () {
+    if (subscriptionMonthly) {
+      basicPrice.textContent = yearlyPrices.basic;
+      proPrice.textContent = yearlyPrices.pro;
+      businessPrice.textContent = yearlyPrices.business;
 
-    subscriptionTypeElems.forEach((element) => {
-      console.log(element);
-      element.textContent = yearlyPrices.subscriptionType;
-    });
-    subscriptionMonthly = false;
-  } else {
-    basicPrice.textContent = monthlyPrices.basic;
-    proPrice.textContent = monthlyPrices.pro;
-    businessPrice.textContent = monthlyPrices.business;
+      subscriptionTypeElems.forEach((element) => {
+        console.log(element);
+        element.textContent = yearlyPrices.subscriptionType;
+      });
+      subscriptionMonthly = false;
+    } else {
+      basicPrice.textContent = monthlyPrices.basic;
+      proPrice.textContent = monthlyPrices.pro;
+      businessPrice.textContent = monthlyPrices.business;
 
-    subscriptionTypeElems.forEach((element) => {
-      element.textContent = monthlyPrices.subscriptionType;
-    });
-    subscriptionMonthly = true;
-  }
-});
+      subscriptionTypeElems.forEach((element) => {
+        element.textContent = monthlyPrices.subscriptionType;
+      });
+      subscriptionMonthly = true;
+    }
+  });
+}

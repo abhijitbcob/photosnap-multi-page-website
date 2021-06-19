@@ -269,10 +269,7 @@ li {
   }
 }
 
-.pr-1 {
-  padding-right: 1rem;
-}
-
+/* REUSABLE GAP */
 .gap-2 {
   gap: 2rem;
 }
@@ -301,6 +298,15 @@ li {
   }
 }
 
+.row-gap-56 {
+  grid-row-gap: 5.6rem;
+}
+
+.md\:row-gap-72 {
+  grid-row-gap: 7.2rem;
+}
+
+/* RESUABLE MARGIN */
 .mt-16 {
   margin-top: 1.6rem;
 }
@@ -317,12 +323,12 @@ li {
   margin-block: 5rem;
 }
 
-.mblock-80 {
-  margin-block: 8rem;
+.mb-30 {
+  margin-bottom: 3rem;
 }
 
-.row-gap-56 {
-  grid-row-gap: 5.6rem;
+.mblock-80 {
+  margin-block: 8rem;
 }
 
 .mt-12 {
@@ -351,10 +357,37 @@ li {
   }
 }
 
-.md\:row-gap-72 {
-  grid-row-gap: 7.2rem;
+/* RESUABLE PADDING */
+.pr-1 {
+  padding-right: 1rem;
 }
 
+.pt-64 {
+  padding-top: 6.4rem;
+}
+
+.pb-64 {
+  padding-bottom: 6.4rem;
+}
+
+@media (min-width: 768px) {
+  .md\:pt-112 {
+    padding-top: 11.2rem;
+  }
+
+  .md\:pb-112 {
+    padding-bottom: 11.2rem;
+  }
+}
+@media (min-width: 992px) {
+  .lg\:pt-160 {
+    padding-top: 16rem;
+  }
+
+  .lg\:pb-160 {
+    padding-bottom: 16rem;
+  }
+}
 .w-full {
   width: 100%;
 }
@@ -856,9 +889,6 @@ li {
   opacity: 0.49;
 }
 
-.features {
-  padding-block: clamp(6.4rem, 9vw, 16rem);
-}
 .features__grid {
   grid-row-gap: clamp(5.6rem, 9vw, 10rem);
 }
@@ -966,13 +996,8 @@ li {
 }
 
 /* Pricing section - pricing card */
-.section-pricing {
-  padding-block: 6.4rem;
-}
-@media (min-width: 768px) {
-  .section-pricing {
-    padding-block: 11.2rem;
-  }
+.pricing {
+  padding-inline: 0.6rem;
 }
 
 .pricing-card {
@@ -1051,4 +1076,73 @@ li {
 }
 .pricing-card__cta {
   margin-top: 5rem;
+}
+
+/* PLAN COMPARE TABLE */
+.compare-table {
+  max-width: 73rem;
+}
+.compare-table__header-row, .compare-table__data-row {
+  padding-right: 3.6rem;
+  padding-block: 2.3rem;
+}
+@media (min-width: 768px) {
+  .compare-table__header-row, .compare-table__data-row {
+    align-items: center;
+    padding-left: 2.5rem;
+  }
+}
+.compare-table__header-row {
+  border-bottom: 1px solid var(--pure-black);
+}
+.compare-table__data-row {
+  border-bottom: 1px solid var(--light-grey);
+  gap: 1.6rem;
+}
+.compare-table__data-row li {
+  min-width: 1.6rem;
+  min-height: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.compare-table__data-row li span {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: var(--fs-700);
+  letter-spacing: 1.67px;
+  opacity: 0.5;
+  color: var(--pure-black);
+}
+@media (min-width: 768px) {
+  .compare-table__data-row li span {
+    display: none;
+  }
+}
+
+.check-mark {
+  width: 1.6rem;
+  height: 1.2rem;
+}
+
+.plans-list,
+.checking-list {
+  flex-basis: 100%;
+}
+@media (min-width: 768px) {
+  .plans-list,
+.checking-list {
+    flex-basis: 33.7rem;
+  }
+}
+
+.plans-list li:nth-child(2) {
+  margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  .checking-list {
+    padding-left: 1.3rem;
+    padding-right: 2.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */

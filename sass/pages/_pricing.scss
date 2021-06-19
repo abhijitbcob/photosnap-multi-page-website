@@ -80,12 +80,8 @@
 }
 
 /* Pricing section - pricing card */
-.section-pricing {
-    padding-block: 6.4rem;
-
-    @include respond-to(medium) {
-        padding-block: 11.2rem;
-    }
+.pricing {
+    padding-inline: 0.6rem;
 }
 
 
@@ -166,4 +162,82 @@
         margin-top: 5rem;
     }
 
+}
+
+/* PLAN COMPARE TABLE */
+.compare-table {
+    max-width: 73rem;
+
+    &__header-row,
+    &__data-row {
+        padding-right: 3.6rem;
+        padding-block: 2.3rem;
+
+        @include respond-to(medium) {
+            align-items: center;
+            padding-left: 2.5rem;
+
+        }
+    }
+
+    &__header-row {
+        border-bottom: 1px solid var(--pure-black);
+    }
+
+    &__data-row {
+        border-bottom: 1px solid var(--light-grey);
+
+        gap: 1.6rem;
+
+        li {
+            min-width: 1.6rem;
+            min-height: 1.2rem;
+
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            span {
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: var(--fs-700);
+                letter-spacing: 1.67px;
+                opacity: 0.5;
+                color: var(--pure-black);
+
+                @include respond-to(medium) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.check-mark {
+    width: 1.6rem;
+    height: 1.2rem;
+}
+
+.plans-list,
+.checking-list {
+    flex-basis: 100%;
+
+    @include respond-to(medium) {
+        flex-basis: 33.7rem;
+    }
+}
+
+.plans-list {
+    li:nth-child(2) {
+        margin-left: 1rem;
+    }
+
+}
+
+.checking-list {
+    @include respond-to(medium) {
+        padding-left: 1.3rem;
+        padding-right: 2.8rem;
+
+    }
 }
