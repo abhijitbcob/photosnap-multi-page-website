@@ -39,6 +39,11 @@ li {
   list-style-type: none;
 }
 
+a:focus-visible {
+  outline: 2px dashed currentColor;
+  outline-offset: 6px;
+}
+
 :root {
   --accent-color-1: hsl(28, 100%, 79%);
   --accent-color-2: hsl(329, 36%, 59%);
@@ -541,6 +546,7 @@ li {
 }
 .header {
   position: relative;
+  padding-block: 1.6rem;
   z-index: 1;
 }
 
@@ -563,10 +569,6 @@ li {
 .desktop-navigation ul a:link,
 .desktop-navigation ul a:visited {
   color: var(--pure-black);
-}
-
-.logo-img {
-  padding-block: 2.8rem;
 }
 
 #menu-toggler {
@@ -786,11 +788,19 @@ li {
   background-color: var(--pure-black);
   color: var(--pure-white);
 }
+.btn-primary--black:focus-visible {
+  outline: 2px dashed var(--pure-black);
+  outline-offset: 4px;
+}
 .btn-primary--white {
   background-color: var(--pure-white);
   color: var(--pure-black);
 }
-.btn-primary:hover {
+.btn-primary--white:focus-visible {
+  outline: 2px dashed var(--pure-white);
+  outline-offset: 4px;
+}
+.btn-primary:hover, .btn-primary:active {
   background-color: var(--light-grey);
   color: var(--pure-black);
 }
@@ -817,7 +827,7 @@ li {
 .btn-secondary--white svg path {
   stroke: var(--pure-white);
 }
-.btn-secondary:hover {
+.btn-secondary:hover, .btn-secondary:active {
   text-decoration: underline;
 }
 
@@ -941,6 +951,12 @@ li {
   width: 1em;
   height: 1em;
 }
+.toggle__element-guide {
+  position: absolute;
+  top: 110%;
+  left: 18%;
+  display: none;
+}
 
 :checked ~ .toggle__decor {
   background: var(--pure-black);
@@ -966,6 +982,13 @@ li {
   background-color: var(--light-grey);
   border-radius: var(--metric-toggle-thumb-size);
   box-sizing: content-box;
+}
+
+.toggle:focus-within .toggle__decor {
+  outline: 2px solid var(--pure-black);
+}
+.toggle:focus-within .toggle__element-guide {
+  display: inline-block;
 }
 
 .toggle__thumb {

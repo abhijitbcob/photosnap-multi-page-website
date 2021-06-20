@@ -19,18 +19,31 @@
     &--black {
         background-color: var(--pure-black);
         color: var(--pure-white);
+
+        &:focus-visible {
+            outline: 2px dashed var(--pure-black);
+            outline-offset: 4px;
+        }
     }
 
     &--white {
         background-color: var(--pure-white);
         color: var(--pure-black);
+
+        &:focus-visible {
+            outline: 2px dashed var(--pure-white);
+            outline-offset: 4px;
+        }
     }
 
-    &:hover {
+    &:hover,
+    &:active {
         background-color: var(--light-grey);
         color: var(--pure-black);
 
     }
+
+
 }
 
 .btn-secondary {
@@ -60,7 +73,8 @@
         }
     }
 
-    &:hover {
+    &:hover,
+    &:active {
         text-decoration: underline;
     }
 }

@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 .header {
     position: relative;
+    padding-block: 1.6rem;
     z-index: 1;
 }
 
@@ -29,9 +30,9 @@
     }
 }
 
-.logo-img {
-    padding-block: 2.8rem;
-}
+// .logo-img {
+//     padding-block: 2.8rem;
+// }
 
 
 // Mobile Menu toggler

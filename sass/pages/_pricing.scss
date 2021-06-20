@@ -22,6 +22,13 @@
     right: var(--metric-toggle-thumb-size);
     width: 1em;
     height: 1em;
+
+    &-guide {
+        position: absolute;
+        top: 110%;
+        left: 18%;
+        display: none;
+    }
 }
 
 :checked~.toggle__decor {
@@ -49,6 +56,16 @@
     background-color: var(--light-grey);
     border-radius: var(--metric-toggle-thumb-size);
     box-sizing: content-box;
+}
+
+.toggle:focus-within {
+    .toggle__decor {
+        outline: 2px solid var(--pure-black);
+    }
+
+    .toggle__element-guide {
+        display: inline-block;
+    }
 }
 
 .toggle__thumb {
