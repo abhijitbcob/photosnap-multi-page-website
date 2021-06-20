@@ -55,7 +55,6 @@ if (toggleButton) {
       businessPrice.textContent = yearlyPrices.business;
 
       subscriptionTypeElems.forEach((element) => {
-        console.log(element);
         element.textContent = yearlyPrices.subscriptionType;
       });
       subscriptionMonthly = false;
