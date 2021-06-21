@@ -21,7 +21,7 @@
         color: var(--pure-white);
 
         &:focus-visible {
-            outline: 2px dashed var(--pure-black);
+            outline: 3px dotted var(--pure-black);
             outline-offset: 4px;
         }
     }
@@ -31,7 +31,7 @@
         color: var(--pure-black);
 
         &:focus-visible {
-            outline: 2px dashed var(--pure-white);
+            outline: 3px dotted var(--pure-white);
             outline-offset: 4px;
         }
     }

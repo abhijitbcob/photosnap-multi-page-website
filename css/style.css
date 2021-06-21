@@ -40,7 +40,7 @@ li {
 }
 
 a:focus-visible {
-  outline: 2px dashed currentColor;
+  outline: 3px dotted currentColor;
   outline-offset: 6px;
 }
 
@@ -798,7 +798,7 @@ a:focus-visible {
   color: var(--pure-white);
 }
 .btn-primary--black:focus-visible {
-  outline: 2px dashed var(--pure-black);
+  outline: 3px dotted var(--pure-black);
   outline-offset: 4px;
 }
 .btn-primary--white {
@@ -806,7 +806,7 @@ a:focus-visible {
   color: var(--pure-black);
 }
 .btn-primary--white:focus-visible {
-  outline: 2px dashed var(--pure-white);
+  outline: 3px dotted var(--pure-white);
   outline-offset: 4px;
 }
 .btn-primary:hover, .btn-primary:active {
@@ -995,7 +995,7 @@ a:focus-visible {
 }
 
 .toggle:focus-within .toggle__decor {
-  outline: 3px dotted gray;
+  outline: 3px dotted #666666;
 }
 
 .toggle__decor:focus-visible {
