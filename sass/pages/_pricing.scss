@@ -67,15 +67,11 @@
     box-sizing: content-box;
 }
 
-// .toggle:focus-within {
-//     .toggle__decor {
-//         outline: 2px solid var(--pure-black);
-//     }
-
-//     .toggle__element-guide {
-//         display: inline-block;
-//     }
-// }
+.toggle:focus-within {
+    .toggle__decor {
+        outline: 3px dotted hsl(0, 0%, 50%);
+    }
+}
 
 .toggle__decor:focus-visible {
     outline: 2px solid var(--pure-black);
