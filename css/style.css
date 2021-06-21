@@ -546,8 +546,11 @@ a:focus-visible {
 }
 .header {
   position: relative;
-  padding-block: 1.6rem;
   z-index: 1;
+}
+
+.logo-link {
+  margin-block: 2.8rem;
 }
 
 .has-fade {
@@ -572,7 +575,9 @@ a:focus-visible {
 }
 
 #menu-toggler {
-  padding: 1rem 0;
+  padding: 0.8rem 0;
+  border: none;
+  background: transparent;
 }
 #menu-toggler span {
   display: block;
@@ -586,6 +591,10 @@ a:focus-visible {
 }
 #menu-toggler span:nth-child(1) {
   margin-bottom: 5px;
+}
+#menu-toggler:focus-visible {
+  outline: 2px dotted var(--pure-black);
+  outline-offset: 1rem;
 }
 
 .open #menu-toggler span:first-child {
@@ -957,10 +966,6 @@ a:focus-visible {
   left: 25%;
   display: none;
   font-size: 1.2rem;
-}
-
-.toggle:focus-within .toggle__decor {
-  outline: 1px solid var(--pure-black);
 }
 
 :checked ~ .toggle__decor {

@@ -3,8 +3,11 @@
 // -----------------------------------------------------------------------------
 .header {
     position: relative;
-    padding-block: 1.6rem;
     z-index: 1;
+}
+
+.logo-link {
+    margin-block: 2.8rem;
 }
 
 // Animations
@@ -37,7 +40,9 @@
 
 // Mobile Menu toggler
 #menu-toggler {
-    padding: 1rem 0;
+    padding: 0.8rem 0;
+    border: none;
+    background: transparent;
 
     span {
         display: block;
@@ -53,6 +58,11 @@
             margin-bottom: 5px;
         }
 
+    }
+
+    &:focus-visible {
+        outline: 2px dotted var(--pure-black);
+        outline-offset: 1rem;
     }
 
 }
