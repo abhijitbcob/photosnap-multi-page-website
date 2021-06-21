@@ -953,9 +953,14 @@ a:focus-visible {
 }
 .toggle__element-guide {
   position: absolute;
-  top: 110%;
-  left: 18%;
+  top: 115%;
+  left: 25%;
   display: none;
+  font-size: 1.2rem;
+}
+
+.toggle:focus-within .toggle__decor {
+  outline: 1px solid var(--pure-black);
 }
 
 :checked ~ .toggle__decor {
@@ -984,11 +989,8 @@ a:focus-visible {
   box-sizing: content-box;
 }
 
-.toggle:focus-within .toggle__decor {
+.toggle__decor:focus-visible {
   outline: 2px solid var(--pure-black);
-}
-.toggle:focus-within .toggle__element-guide {
-  display: inline-block;
 }
 
 .toggle__thumb {
