@@ -994,10 +994,6 @@ a:focus-visible {
   box-sizing: content-box;
 }
 
-.toggle:focus-within .toggle__decor {
-  outline: 3px dotted #666666;
-}
-
 .toggle__decor:focus-visible {
   outline: 2px solid var(--pure-black);
 }
